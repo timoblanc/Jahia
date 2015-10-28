@@ -1,9 +1,3 @@
-.navbar-fixed-top {
-    position: fixed;
-    right: 0px;
-    left: 0px;
-    z-index: 1030;
-}
 #logo{
     margin-left: 15px;
     background: none;
