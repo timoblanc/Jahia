@@ -15,7 +15,10 @@
   		height:500px !important;
     	background-size: auto 100% !important;
     	background-position:center !important;
-    	padding-left: 21%;	
+    		
+	}
+	.banner-text{
+  		padding-left: 21%;
 	}
 	
 }
