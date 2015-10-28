@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<content xmlns:j="http://www.jahia.org/jahia/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0">
+    <modules jcr:primaryType="jnt:modules">
+        <jupiteractualites j:dependencies="bootstrap3-components bootstrap3-core default document-management-api socialsharing"
+                         j:modulePriority="0"
+                         j:moduleType="module"
+                         j:title="JupiterActualites"
+                         jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                         jcr:primaryType="jnt:module">
+                <sources jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                  jcr:primaryType="jnt:moduleVersionFolder"
+                  j:staticMountPointProviderKey="module-jupiteractualites-1.0-SNAPSHOT">
+                    <src jcr:primaryType="jnt:folder">
+                        <main jcr:primaryType="jnt:folder">
+                            <resources jcr:primaryType="jnt:folder">
+                                <css jcr:primaryType="jnt:cssFolder">
+                                    <jupiterNews.css jcr:primaryType="jnt:cssFile"/>
+                                </css>
+                                <jnt_JupiterNews jcr:primaryType="jnt:nodeTypeFolder">
+                                    <html jcr:primaryType="jnt:templateTypeFolder">
+                                        <JupiterNews.fullView.jsp jcr:primaryType="jnt:viewFile"/>
+                                        <JupiterNews.horizontal.jsp jcr:primaryType="jnt:viewFile"/>
+                                        <JupiterNews.vertical.jsp jcr:primaryType="jnt:viewFile"/>
+                                    </html>
+                                </jnt_JupiterNews>
+                            </resources>
+                        </main>
+                    </src>
+                </sources>
+                
+                <portlets jcr:primaryType="jnt:portletFolder"/>
+                <files jcr:primaryType="jnt:folder"/>
+                <contents jcr:primaryType="jnt:contentFolder"/>
+                <templates j:rootTemplatePath="/base" jcr:primaryType="jnt:templatesFolder">
+                    <files jcr:primaryType="jnt:folder"/>
+                    <contents jcr:primaryType="jnt:contentFolder"/>
+                    <jupiterfullnews j:applyOn="jnt:JupiterNews"
+                             j:defaultTemplate="true"
+                             j:hiddenTemplate="false"
+                             j:priority="50"
+                             jcr:primaryType="jnt:contentTemplate">
+                        <j:translation_fr jcr:language="fr"
+                                 jcr:mixinTypes="mix:title"
+                                 jcr:primaryType="jnt:translation"
+                                 jcr:title="jupiterFullNews"/>
+                        <pagecontent jcr:primaryType="jnt:contentList">
+                            <section--container--row--grid columnsType="predefinedColumns"
+                                                 grid="12"
+                                                 gridLayout="fixed-width"
+                                                 j:workInProgress="false"
+                                                 jcr:mixinTypes="bootstrap3mix:createContainer bootstrap3mix:createRow bootstrap3mix:createSection bootstrap3mix:predefinedColumns"
+                                                 jcr:primaryType="bootstrap3nt:columns"
+                                                 sectionElement="div">
+                                <section--container--row--grid-main jcr:primaryType="jnt:contentList">
+                                    <main-resource-display j:mainResourceView="fullView" jcr:primaryType="jnt:mainResourceDisplay"/>
+                                    <social-sharing jcr:primaryType="jnt:socialsharing"
+                                        socialNetworks="facebook linkedin twitter"/>
+                                </section--container--row--grid-main>
+                            </section--container--row--grid>
+                        </pagecontent>
+                    </jupiterfullnews>
+                </templates>
+                
+            </jupiteractualites>
+    </modules>
+</content>

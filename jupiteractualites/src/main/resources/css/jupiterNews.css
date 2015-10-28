@@ -1,0 +1,57 @@
+h2.titleJupiterNews {
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 5px;
+  font-size: 33px;
+  font-weight: bold;
+  padding-bottom: 0px;
+}
+
+div.articleNewsVertical, div.articleNewsHorizontal, div.articleNews {
+  color: black;
+  font-size: 14px;
+}
+
+div.articleNewsHorizontal p.readMore br{
+	clear:both;
+}
+
+div.articleNewsVertical p.jupiterNewsDate, div.articleNewsHorizontal p.jupiterNewsDate{
+ margin-bottom: 5px; 
+}
+
+div.articleNewsVertical .readMoreLink, div.articleNewsHorizontal .readMoreLink{
+  font-size: 1.5em;
+  color: black;
+  font-weight: bold;
+}
+
+div.articleNewsHorizontal img{
+  width: 100%;
+  height: 100%;
+  margin: 0 5px 5px 0;
+}
+
+div.articleNews img {
+ width: 100%; 
+}
+
+h2.titleJupiterNews, div.articleNews .Jupiterblue {
+ color: #5E87AF
+}
+
+div.articleNews hr {
+  margin: 1px;
+  height: 2px;
+  background-color: rgb(196,196,196);
+}
+
+@media screen and (max-width: 992px) {
+  div.articleNewsHorizontal img, div.articleNewsVertical img{
+    width: 100%;
+  }
+	
+  div.articleNewsHorizontal p.readMore {
+  	text-align: center;
+  }
+}
+  

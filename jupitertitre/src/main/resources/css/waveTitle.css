@@ -1,0 +1,10 @@
+.waveTitle img{
+  width:20%;
+  display:inline-block;
+  margin-bottom: 5px;
+}
+
+.waveTitle h2 {
+  display:inline-block;
+  color:#5E87AF;
+}
