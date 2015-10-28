@@ -11,6 +11,23 @@
                 <sources jcr:mixinTypes="jmix:hasExternalProviderExtension jmix:sourceControl"
                   jcr:primaryType="jnt:moduleVersionFolder"
                   j:staticMountPointProviderKey="module-jupitertemplate-1.0-SNAPSHOT">
+                    <jupitertemplate jcr:mixinTypes="jmix:sourceControl" jcr:primaryType="jnt:folder">
+                    <src jcr:mixinTypes="jmix:sourceControl" jcr:primaryType="jnt:folder">
+                        <main jcr:mixinTypes="jmix:sourceControl" jcr:primaryType="jnt:folder">
+                                <resources jcr:mixinTypes="jmix:sourceControl"
+                                jcr:primaryType="jnt:resourceBundleFolder">
+                                    <css jcr:mixinTypes="jmix:sourceControl" jcr:primaryType="jnt:cssFolder">
+                                        <header.css jcr:mixinTypes="jmix:sourceControl" jcr:primaryType="jnt:cssFile"/>
+                                    </css>
+                                    <jnt_Header jcr:mixinTypes="jmix:sourceControl" jcr:primaryType="jnt:folder">
+                                        <html jcr:mixinTypes="jmix:sourceControl" jcr:primaryType="jnt:folder">
+                                            <Header.Header.jsp jcr:mixinTypes="jmix:sourceControl" jcr:primaryType="jnt:viewFile"/>
+                                        </html>
+                                    </jnt_Header>
+                                </resources>
+                            </main>
+                        </src>
+                    </jupitertemplate>
                     <src jcr:mixinTypes="jmix:sourceControl" jcr:primaryType="jnt:folder">
                         <main jcr:mixinTypes="jmix:sourceControl" jcr:primaryType="jnt:folder">
                             <resources jcr:primaryType="jnt:folder">
