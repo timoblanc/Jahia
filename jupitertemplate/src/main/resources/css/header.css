@@ -347,7 +347,7 @@ tbody.collapse.in {
   .top-menu-container-fluid > .top-menu-header,
   .container > .top-menu-collapse,
   .top-menu-container-fluid > .top-menu-collapse {
-    margin-right: 0;
+    margin-right: 25px;;
     margin-left: 0;
   }
 }
