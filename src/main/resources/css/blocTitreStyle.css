@@ -1,0 +1,22 @@
+.contentTitreContainer{
+  width:100%;
+  margin 0 auto;
+  font-family: 'Montserrat', sans-serif; 
+  text-align:center;
+  color: #5E87AF;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.titreContainer img {
+  max-height: 14px;
+  width: auto;
+}
+
+.titreContainer img.imgLeft {
+  margin-right:5%;
+}
+
+.titreContainer img.imgRight {
+  margin-left: 5%;
+}
