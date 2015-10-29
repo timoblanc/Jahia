@@ -85,8 +85,8 @@
   <name>titreBloc</name>
   <description>This is the custom module (titreBloc) for running on a Digital Factory server.</description>
   <scm>
-    <connection>scm:dummy:uri</connection>
-    <developerConnection>scm:dummy:uri</developerConnection>
+    <connection>scm:git:https://github.com/timoblanc/Jahia.git</connection>
+    <developerConnection>scm:git:https://github.com/timoblanc/Jahia.git</developerConnection>
   </scm>
   <properties>
     <jahia-depends>bootstrap3-components,bootstrap3-core,default</jahia-depends>
