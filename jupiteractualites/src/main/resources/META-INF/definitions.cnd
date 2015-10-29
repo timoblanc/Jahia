@@ -1,0 +1,11 @@
+<jmix = 'http://www.jahia.org/jahia/mix/1.0'>
+<jnt = 'http://www.jahia.org/jahia/nt/1.0'>
+
+[jnt:JupiterNews] > jnt:content, jmix:document, jmix:structuredContent
+ - Date_de_l_article (date, datepicker)
+ - Titre_de_l_article (string)
+ - Image_d_illustration (weakreference, picker[type='image']) = '/files/default/sites/mySite/files/logoimagetype.png'
+ - Introduction_de_l_article (string, richtext)
+ - Article (string, richtext)
+ - Document_telechargeable (weakreference, picker[type='file'])
+
