@@ -19,12 +19,20 @@
 <%--@elvariable id="url" type="org.jahia.services.render.URLGenerator"--%>
 
 <template:addResources type="css" resources="blocTitreStyle.css" />
+<template:addResources type="javascript" resources="jquery-2.1.4.min.js" />
 <link href='https://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
 
-<c:set var="imageUrl" value="${currentNode.properties['Icones'].node.url}"/>
+<c:if test="${not empty currentNode.properties['Icones']}">
+	<c:set var="imgUrl" value="${currentNode.properties['Icones'].node.url}"/>
+</c:if>
+<c:if test="${empty currentNode.properties['Icones']}">
+  <c:set var="imgUrl" value="/modules/titrebloc/images/vaguebleu.png"/>
+</c:if>
 <c:set var="titreString" value="${currentNode.properties['Titre'].string}"/>
 <div class="titreContainer">
   <div class="contentTitreContainer">
-    <img src="${imageUrl}" class="imgLeft"/>${titreString}<img src="${imageUrl}" class="imgRight"/>
+    <img src="${imgUrl}" class="imgLeft"/>${titreString}<img src="${imgUrl}" class="imgRight"/>
   </div>
 </div>
+
+
