@@ -1,0 +1,20 @@
+#banner{
+  	background-size: 100% auto !important;
+  	height: 293px !important;
+    background-position: center !important;
+    margin-top:0 !important;
+}
+@media (max-width: 650px){
+ 	#banner{
+  		background-size: auto 100% !important;
+    	height: 293px !important;
+        background-position: top !important;
+	} 
+}
+@media (min-width: 1440px){
+ 	#banner{
+  		height:625px !important;
+    	background-size: 100% auto !important;
+    	background-position:center !important;
+    		
+	}
