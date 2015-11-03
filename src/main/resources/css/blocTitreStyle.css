@@ -1,0 +1,24 @@
+.contentTitreContainer{
+  width:100%;
+  margin 0 auto;
+  font-family: 'Montserrat', sans-serif; 
+  text-align:center;
+  color: #5E87AF;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.titreContainer img {
+  background-image: url(img/vaguebleu.png);
+  max-height: 22px;
+  width: auto;
+}
+
+.titreContainer img.imgLeft {
+  margin-right:5%;
+}
+
+.titreContainer img.imgRight {
+  margin-left: 5%;
+}
+
