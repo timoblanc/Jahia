@@ -21,6 +21,7 @@
 <template:addResources type="css" resources="fonts.css"/>
 <template:addResources type="javascript" resources="jquery.min.js"/>
 <template:addResources type="javascript" resources="bootstrap.min.js"/>
+<template:addResources type="javascript" resources="HeaderMenu.js" />
 <nav class="top-menu top-menu-default">
           <div class="top-menu-container-fluid">
             <div class="top-menu-header">
@@ -30,16 +31,16 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="top-menu-brand" href="home.html">
+              <a id = "link-top-home" class="top-menu-brand" href="home.html">
                 <img id="logo" src="/modules/jupitertemplate/img/logo-header.png">
                 </a>
             </div>
             <div class="collapse top-menu-collapse" id="bs-example-top-menu-collapse-1">
               <ul class="nav-top-menu top-menu-nav top-menu-right">
-                <li><a href="power-to-gas.html">Power to gas</a></li>
-                <li><a href="le-projet.html">Le projet</a></li>
-                <li><a href="actualites.html">Actualités</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a id="link-top-power" href="power-to-gas.html">Power to gas</a></li>
+                <li><a id="link-top-projet" href="le-projet.html">Le projet</a></li>
+                <li><a id="link-top-actus" href="actualites.html">Actualités</a></li>
+                <li><a id="link-top-contact" href="contact.html">Contact</a></li>
               </ul>
             </div>
           </div>

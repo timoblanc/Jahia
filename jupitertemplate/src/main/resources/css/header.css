@@ -1,3 +1,9 @@
+.active-link-top-menu{
+    background-image: url(/modules/jupitertemplate/img/vague-blanche.png);   
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 28px 10px;
+}
 #logo{
     margin-left: 15px;
     background: none;
@@ -12,7 +18,7 @@ a {
   color: #337ab7;
   text-decoration: none;
     font-family: 'Montserrat';
-    font-weight: 300;
+    
     font-size: 14px;
 }
 a:hover,
@@ -23,8 +29,6 @@ a:focus {
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: 28px 10px;
-   
-  
 }
 a:focus {
   outline: thin dotted;
@@ -630,7 +634,7 @@ tbody.collapse.in {
 .top-menu-default .top-menu-nav > li > a:hover,
 .top-menu-default .top-menu-nav > li > a:focus {
   color: #ffffff;
-    font-weight: bold;
+    
   background-color: transparent;
 }
 .top-menu-default .top-menu-nav > .active > a,

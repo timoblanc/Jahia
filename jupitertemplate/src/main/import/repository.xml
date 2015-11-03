@@ -15,8 +15,15 @@
                         <main jcr:mixinTypes="jmix:sourceControl" jcr:primaryType="jnt:folder">
                             <resources jcr:mixinTypes="jmix:sourceControl" jcr:primaryType="jnt:folder">
                                 <css jcr:mixinTypes="jmix:sourceControl" jcr:primaryType="jnt:cssFolder">
-                                    <Pages.css jcr:mixinTypes="jmix:sourceControl" jcr:primaryType="jnt:cssFile"/>
+                                    <footer.css jcr:mixinTypes="jmix:sourceControl" jcr:primaryType="jnt:cssFile"/>
+                                    <header.css jcr:mixinTypes="jmix:sourceControl" jcr:primaryType="jnt:cssFile"/>
+                                    <Pages.css jcr:primaryType="jnt:cssFile"/>
                                 </css>
+                                <javascript jcr:mixinTypes="jmix:sourceControl"
+                                 jcr:primaryType="jnt:javascriptFolder">
+                                    <HeaderMenu.js jcr:mixinTypes="jmix:sourceControl"
+                                       jcr:primaryType="jnt:javascriptFile"/>
+                                </javascript>
                                 <jnt_Header jcr:mixinTypes="jmix:sourceControl"
                                  jcr:primaryType="jnt:nodeTypeFolder">
                                     <html jcr:mixinTypes="jmix:sourceControl"
@@ -65,7 +72,7 @@
                   jcr:mixinTypes="jmix:theme"
                   jcr:primaryType="jnt:template">
                         <home jcr:primaryType="jnt:pageTemplate"/>
-                    <simple jcr:primaryType="jnt:pageTemplate"/>
+                        <simple jcr:primaryType="jnt:pageTemplate"/>
                         <pagecontent jcr:primaryType="jnt:contentList">
                             <header j:view="Header"
                           jcr:mixinTypes="jmix:renderable"
@@ -78,29 +85,26 @@
                           jcr:mixinTypes="jmix:renderable"
                           jcr:primaryType="jnt:Footer"/>
                         </pagecontent>
-                        <jupiteractualite j:applyOn="jnt:JupiterActualites"
-                                 j:defaultTemplate="true"
-                                 j:hiddenTemplate="false"
-                                 j:priority="50"
-                                 j:view="jupitertemplate"
-                                 jcr:primaryType="jnt:contentTemplate">
-                            <j:translation_fr jcr:language="fr"
-                                    jcr:primaryType="jnt:translation"
-                                    jcr:title="JupiterActualite"/>
+                            <jupiteractualite j:applyOn="jnt:JupiterActualites"
+                                    j:defaultTemplate="true"
+                                    j:hiddenTemplate="false"
+                                    j:priority="50"
+                                 j:view="default"
+                                    jcr:primaryType="jnt:contentTemplate">
+                            <j:translation_fr j:workInProgress="false"
+                                    jcr:language="fr"
+                                       jcr:mixinTypes="mix:title"
+                                       jcr:primaryType="jnt:translation"
+                                       jcr:title="JupiterActualite"/>
                             <main jcr:primaryType="jnt:contentList">
-                                <ActuArea j:allowedTypes="" jcr:primaryType="jnt:area">
-                                    <ActuArea jcr:primaryType="jnt:contentList"/>
-                                </ActuArea>
-                            </main>
-                            <pagecontent jcr:primaryType="jnt:contentList">
-                                <ActusArea j:allowedTypes="" jcr:primaryType="jnt:area">
-                                    <ActusArea jcr:primaryType="jnt:contentList">
+                                <area629577 jcr:primaryType="jnt:area">
+                                    <area629577 jcr:primaryType="jnt:contentList">
                                         <main-resource-display j:mainResourceView="fullView" jcr:primaryType="jnt:mainResourceDisplay"/>
-                                </ActusArea>
-                                </ActusArea>
-                            </pagecontent>
-                        </jupiteractualite>
-                </base>
+                                </area629577>
+                                </area629577>
+                            </main>
+                            </jupiteractualite>
+                    </base>
             </templates>
                 
                 <home j:isHomePage="true"
