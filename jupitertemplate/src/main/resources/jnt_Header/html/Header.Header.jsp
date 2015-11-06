@@ -22,7 +22,7 @@
 <template:addResources type="javascript" resources="jquery.min.js"/>
 <template:addResources type="javascript" resources="bootstrap.min.js"/>
 <template:addResources type="javascript" resources="HeaderMenu.js" />
-<nav class="top-menu top-menu-default">
+<nav class="top-menu top-menu-default top-menu-fixed-top">
           <div class="top-menu-container-fluid">
             <div class="top-menu-header">
               <button type="button" class="top-menu-toggle collapsed" data-toggle="collapse" data-target="#bs-example-top-menu-collapse-1" aria-expanded="false">

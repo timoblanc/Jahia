@@ -22,9 +22,11 @@
                                 <javascript jcr:primaryType="jnt:javascriptFolder">
                                     <HeaderMenu.js jcr:primaryType="jnt:javascriptFile"/>
                                 </javascript>
-                                <jnt_Header jcr:primaryType="jnt:nodeTypeFolder">
-                                    <html jcr:primaryType="jnt:templateTypeFolder">
-                                        <Header.Header.jsp jcr:primaryType="jnt:viewFile"/>
+                                <jnt_Header jcr:mixinTypes="jmix:sourceControl"
+                                 jcr:primaryType="jnt:nodeTypeFolder">
+                                    <html jcr:mixinTypes="jmix:sourceControl"
+                              jcr:primaryType="jnt:templateTypeFolder">
+                                        <Header.Header.jsp jcr:mixinTypes="jmix:sourceControl" jcr:primaryType="jnt:viewFile"/>
                                     </html>
                                 </jnt_Header>
                             </resources>
