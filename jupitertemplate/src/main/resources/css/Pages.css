@@ -7,9 +7,13 @@
     margin-left: -20px;
     margin-top: -10px;
   }
+	#banner-text-Accueil{
+  	margin-top: -30px;
+  }
 }
 .container-fluid{
-  margin-top:25px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 .image-responsive{
   max-width:100%;
@@ -40,5 +44,8 @@
   	}
 	#banner-text-Projet{
     	margin-top: 192px;
+    }
+	#banner-text-Accueil{
+  		margin-top: 213px;
     }
 }
