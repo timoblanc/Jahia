@@ -15,13 +15,22 @@
                         <main jcr:mixinTypes="jmix:sourceControl" jcr:primaryType="jnt:folder">
                             <resources jcr:mixinTypes="jmix:sourceControl" jcr:primaryType="jnt:folder">
                                 <css jcr:mixinTypes="jmix:sourceControl" jcr:primaryType="jnt:cssFolder">
-                                    <footer.css jcr:primaryType="jnt:cssFile"/>
-                                    <header.css jcr:primaryType="jnt:cssFile"/>
-                                    <Pages.css jcr:mixinTypes="jmix:sourceControl" jcr:primaryType="jnt:cssFile"/>
+                                    <footer.css jcr:mixinTypes="jmix:sourceControl" jcr:primaryType="jnt:cssFile"/>
+                                    <header.css jcr:mixinTypes="jmix:sourceControl" jcr:primaryType="jnt:cssFile"/>
+                                    <Pages.css jcr:primaryType="jnt:cssFile"/>
                                 </css>
-                                <javascript jcr:primaryType="jnt:javascriptFolder">
-                                    <HeaderMenu.js jcr:primaryType="jnt:javascriptFile"/>
+                                <javascript jcr:mixinTypes="jmix:sourceControl"
+                                 jcr:primaryType="jnt:javascriptFolder">
+                                    <HeaderMenu.js jcr:mixinTypes="jmix:sourceControl"
+                                       jcr:primaryType="jnt:javascriptFile"/>
                                 </javascript>
+                                <jnt_Footer jcr:mixinTypes="jmix:sourceControl"
+                                 jcr:primaryType="jnt:nodeTypeFolder">
+                                    <html jcr:mixinTypes="jmix:sourceControl"
+                              jcr:primaryType="jnt:templateTypeFolder">
+                                        <Footer.Footer.jsp jcr:mixinTypes="jmix:sourceControl" jcr:primaryType="jnt:viewFile"/>
+                                    </html>
+                                </jnt_Footer>
                                 <jnt_Header jcr:primaryType="jnt:nodeTypeFolder">
                                     <html jcr:primaryType="jnt:templateTypeFolder">
                                         <Header.Header.jsp jcr:primaryType="jnt:viewFile"/>

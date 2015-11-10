@@ -7,15 +7,16 @@
 #foot-link-list{
   margin-bottom:0px;
 }
-#foot-link{
+.foot-link{
     font-family: 'Montserrat-Regular';
     color: white;
     font-weight: 400;
 }
-#foot-link:hover,
-#foot-link:focus{
+.foot-link:hover,
+.foot-link:focus{
     text-decoration: none;
     background: none;
+    color:white;
 }
 #foot-link-list > li{
     display: inline-block;

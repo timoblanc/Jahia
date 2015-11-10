@@ -23,13 +23,13 @@
           <img id="foot-logo" src="/modules/jupitertemplate/img/GRT.png">
             <div id="foot-container-link">
                 <ul id="foot-link-list">
-                  <li><a id="foot-link" href="power-to-gas.html">Power to gas</a></li>
+                  <li><a id="link-bottom-power" class="foot-link" href="power-to-gas.html">Power to gas</a></li>
                     <li><a id="divider-vertical" href="#"></a></li>
-                  <li><a id="foot-link" href="le-projet.html">Le projet JUPITER 1000</a></li>
+                  <li><a id="link-bottom-projet" class="foot-link" href="le-projet.html">Le projet JUPITER 1000</a></li>
                     <li><a id="divider-vertical" href="#"></a></li>
-                  <li><a id="foot-link" href="actualites.html">Actualités</a></li>
+                  <li><a id="link-bottom-actus" class="foot-link" href="actualites.html">Actualités</a></li>
                     <li><a id="divider-vertical" href="#"></a></li>
-                  <li><a id="foot-link" href="contact.html">Nous contacter</a></li>
+                  <li><a id="link-bottom-contact" class="foot-link" href="contact.html">Nous contacter</a></li>
                     <div id="Copyright">Copyright 2015</div>
               </ul>                
             </div>
